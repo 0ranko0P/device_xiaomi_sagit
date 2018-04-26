@@ -1,4 +1,7 @@
-<!-- Copyright (C) 2009 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2016 The CyanogenMod Project
+                   2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,10 +16,18 @@
      limitations under the License.
 -->
 
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds.  Do not translate. -->
-
 <resources>
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>00default:standard</item>
+        <item>01warm:reading</item>
+        <item>02cool:dynamic</item>
+        <item>37sRGB-native:srgb</item>
+    </string-array>
 
     <!-- Button backlight -->
     <bool name="config_button_brightness_support">true</bool>
