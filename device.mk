@@ -33,6 +33,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCameraMod-sagit
 
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0 \
+    vendor.lineage.touch@1.0-service.sagit
+
 # Wallpapers
 PRODUCT_PACKAGES += \
     WallpapersBReel2017 \
