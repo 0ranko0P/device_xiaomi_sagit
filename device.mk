@@ -1,10 +1,13 @@
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Inherit from msm8998-common
 $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
@@ -37,11 +40,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0 \
     vendor.lineage.touch@1.0-service.sagit
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    WallpapersBReel2017 \
-    LiveWallpapersPicker
 
 # Message
 PRODUCT_PACKAGES += \

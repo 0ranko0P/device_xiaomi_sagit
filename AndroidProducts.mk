@@ -1,8 +1,8 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_sagit.mk
+    $(LOCAL_DIR)/aosp_sagit.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    bliss_sagit-user \
-    bliss_sagit-userdebug \
-    bliss_sagit-eng
+    aosp_sagit-user \
+    aosp_sagit-userdebug \
+    aosp_sagit-eng
