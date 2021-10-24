@@ -23,6 +23,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
