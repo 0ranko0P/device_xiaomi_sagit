@@ -1,3 +1,7 @@
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+
 # Inherit from msm8998-common
 include device/xiaomi/msm8998-common/BoardConfigCommon.mk
 
